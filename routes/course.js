@@ -7,12 +7,12 @@ const courseRouter = Router();
         })
     })
 
-    courseRouter.post("/preview",function(req,res){
+    courseRouter.get("/preview",function(req,res){
         res.json({
             message: "courses endPoint"
         })
     })
 
 module.exports ={
-    createCourseRouters: createCourseRouters
+    courseRouter: courseRouter
 }
